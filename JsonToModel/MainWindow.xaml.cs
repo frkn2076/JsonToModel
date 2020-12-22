@@ -62,7 +62,7 @@ namespace JsonToModel {
                         stringBuilder.Append(string.Concat("  public int ", key, " { get; set; } \n"));
                     }
                     else if (value is decimal) {
-                        stringBuilder.Append(string.Concat("  public float ", key, " { get; set; } \n"));
+                        stringBuilder.Append(string.Concat("  public decimal ", key, " { get; set; } \n"));
                     }
                     else if (value is DynamicJsonArray) {
                         stringBuilder.Append(string.Concat("  public Node", index, "[] ", key, " { get; set; } \n"));
